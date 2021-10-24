@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/103ed8a81a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div id="weathericon">
+        <i class="fas fa-sun" style="color: #eccc68"></i>
+      </div>
+      <div class="info">
+        <h2 class="location">
+          <i class="fas fa-street-view" style="color: #fff"></i>
+          {%location%}, {%country%}
+        </h2>
+        <p id="date">WED | Nov 6 |11:30PM</p>
+        <h1 class="temp">{%tempval%}&deg;C</h1>
+        <h3 class="tempmin_max">
+          Min {%tempmin%}&deg;C | Max {%tempmax%}&deg;C
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
